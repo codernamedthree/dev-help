@@ -8,12 +8,34 @@
   
   <body>
       <h1>Dev-helpdesk</h1>
-      <p>We can help you fix your code! Search something in our automated searchbar to find your issue.</p>
-      <input type="search" placeholder="Type in an HTML5 tag..." name="searchquery">
-      <input type="submit" value="Search">
-    <h2>List of HTML5 tags:</h2>
-    <a href=""><q>DOCTYPE html</q></a>
-    <a href=""><q>Meta</q></a>
-    <a href=""><q>title</q></a>
+      <p>We can help you create big projects! Search something to get started.</p>
+      <div class="search-wrapper">
+        <label for="search">SEarch HTML5 tags: </label>
+        <input type="search" id="search"
+    </div>
+        <div class="html-cards">
+          <div class="card">
+              <div class="header">form-email</div>
+            <div class="body"><a>Go to project guild</a></div>
+          </div>
+        </div>
   </body>
+    
+    <style>
+      .search-wrapper {
+        display:flex;
+        flex-direction:colume;
+        gap:.25rem;
+      }
+      
+      input {
+        font-size:1rem;
+      }
+      
+      .html-cards {
+        display:grid;
+        grid-template-columns: repeat(auto-fill)
+      }
+    </style>
+    
 </html>
