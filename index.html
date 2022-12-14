@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <title>Dev Helpdesk</title>
+  </head>
+  
+  <body>
+      <h1>Dev-helpdesk</h1>
+      <p>We can help you create big projects! Search something to get started.</p>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Repo Test</title>
   </head>
   
@@ -21,21 +32,52 @@
         </div>
   </body>
     
-    <style>
-      .search-wrapper {
-        display:flex;
-        flex-direction:colume;
-        gap:.25rem;
-      }
-      
-      input {
-        font-size:1rem;
-      }
-      
-      .html-cards {
-        display:grid;
-        grid-template-columns: repeat(auto-fill)
-      }
-    </style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Repo Test</title>
+  </head>
+  
+  <body>
+      <h1>Dev-helpdesk</h1>
+      <p>We can help you code! Search something to get started.</p>
+ <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+<ul id="myMenu">
+  <li><a href="#"><code>DOCTYPE</code></a></li>
+  <li><a href="#"><code>title</code></a></li>
+  <li><a href="#"><code>meta</code></a></li>
+  <li><a href="#"><code>?php</code></a></li>
+  <li><a href="#"><code>script</code></a></li>
+  <li><a href="#"><code>h1</code></a></li>
+  <li><a href="#"><code>search</code></a></li>
+  <li><a href="#">query</a></li>
+  <li><a href="#">adding files to HTML5 documents</a></li>
+</ul>
+
+    <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
     
+  </body>
+        
 </html>
